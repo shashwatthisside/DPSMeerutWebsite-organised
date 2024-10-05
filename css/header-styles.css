@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text:#ffffff;
+    --header-background:#0B7C2D;
+    --link-hover:#E1C214;
+    --sections-subHeading:#383838;
+    --sections-heading:#231834;
+    --about-section-text:#F8F8F8;
+}
+
+.main-header{
+    background-color: var(--header-background);
+    height: 5.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:2px solid #ece5e5fb;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+/* Left-Section */
+
+.left-section{
+    display: inline-block;
+    margin-left: 6em;
+}
+
+.left-section img{
+    width: 23em;
+    height: 4.8em;
+}
+
+
+
+/* Right-Section */
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    margin-right: 6em;
+}
+
+/* Left-Half of Right Section */
+.left-half{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
+    position: relative;
+}
+
+
+/* Group 1 */
+.group1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.group1 .three60btn{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+    align-items: center;
+    gap: 3px;
+    transition: all 0.2s ease ;
+    cursor: pointer;
+}
+
+.group1 .three60btn:hover{
+    background-color: var(--link-hover);
+}
+
+.group1 .three60btn .three60-icon{
+    filter: invert(100%);
+
+}
+
+.group1 .three60btn .three60-icon img{
+    width: 23px;
+    height: 25px;
+
+}
+
+.group1 .three60btn .three60-text{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+}
+
+
+.socialmedia-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.socialmedia-icons a img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* Group 2 */
+
+.group2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.group2 .mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-text);
+    gap: 3px;
+}
+
+.mobile .mobile-icon img{
+width: 18px ;
+height: 18px;
+}
+
+
+.group2 .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-text);
+    gap: 3px;
+}
+
+.email .email-text{
+    font-size: 13px;
+}
+
+.mobile .mobile-text{
+    font-size: 13px;
+}
+
+.email .email-icon img{
+    width: 18px ;
+    height: 18px;
+    }
+
+
+    .group3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--header-text);
+        gap: 15px;
+    }
+
+    .group3 a{
+        text-decoration: none;
+        color: var(--header-text);
+    }
+
+    .group3-text{
+        font-size: 12px;
+    }
+
+    .dividing-line{
+        opacity: 0.9;
+        color: #ffffff;
+    }
+
+
+
+    .right-half{
+        display: flex;
+         flex-direction: column;
+          gap: 6px;
+         position: relative;
+         gap: 4px;
+    }
+
+    .header-btn{
+        background:transparent linear-gradient(230deg, #007fd0 0%, #002348 100%);
+        position: relative;
+        color: var(--header-text);
+        border-radius: 0 25px 25px 0;
+        padding: 8px 4px;
+        transition: 0.3s;
+        margin: 0 13px;
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        text-decoration: none;
+        color: var(--header-text);
+        width: 161px;
+        height: 34px;
+      }
+
+
+      .btn-icon{
+        box-shadow: inset 10px 11px 12px #00000029, 0px 3px 10px #00000021;
+        border: 1px solid #ffffff;
+        padding: 2px;
+        border-radius: 50%;
+        top: 50%;
+        left: 0;
+        margin-left: -17px;
+        /* line-height: 1; */
+        transform: translate(0, -50%);
+        position: absolute;
+        display: flex;
+        background: transparent linear-gradient(179deg, #007fd0 0%, #002348 100%);
+        
+      }
+
+
+      .btn-text{
+        padding: 0px 3px 0px 6px;
+        border-left: 1px #ffffff solid;
+      }
+
+
+      sup{
+        font-size: 5px;
+      }
+
+
+      .btn-text{
+        font-size: 12px;
+        margin-left: 15px;
+      }
+
+      .btn-icon img{
+        width: 23px ;
+        height:23px ;
+      }
+
+
+      .lower-btn{
+        background-color: #047FC3;
+        position: relative;
+        color: var(--header-text);
+        border-radius: 25px 25px 25px 25px;
+        padding: 8px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        text-decoration: none;
+        width: 10.8em;
+    height: 2.1em;
+      }
+
+
+      .lowerbtn-icon img{
+        width: 23px;
+        height: 23px;
+      }
+
+      .dropdown-toggle::after{
+        content: none;
+      }
+
+
+      .lowerbtn-text{
+        padding: 0px 3px 0px 6px;
+        font-size: 12px;
+      }
+
+
+      .left-half::after{
+        content:"";
+        position: absolute;
+        width: 2px;
+        height: 4.7em;
+        background-color: var(--header-text);
+        opacity: 0.5;
+        vertical-align: middle;
+        right: -13px;
+      }
+
+/* Main Header Ends Here */
+
+
+/* Lower Header Starts Here */
+
+.lower-header{
+    background-color: var(--header-background);
+    display: flex;
+    justify-content: center;
+}
+
+.lower-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 0px;
+    overflow: hidden;
+}
+
+.lower-container span a{
+    text-decoration: none;
+    color: var(--header-text);
+    font-size: 12px;
+    font-family: "Rubik";
+    padding: 24px 6px;
+    transition: all 0.2s ease;
+}
+
+.lower-container .dividing-line{
+    margin-left: 5px;
+    margin-right:5px ;
+}
+
+
+.lower-container .lower-header-text a:hover{
+    background-color: var(--link-hover);
+}
+
+.lower-header-text .dropdown-toggle::after{
+    content: none;
+}
+
+
+.sub-academics-links{
+    list-style: none;
+    padding: 0px;
+}
+
+
+
+.lower-header-text .dropdown-menu .dropdown-item{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #0B7C2D;
+}
+
+/* Updates Section */
+
+.news-section{
+    background-color: #ffffff;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.news-section-content{
+    /* padding: 23px 0px; */
+    display: flex;
+    width: 72em;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.news-section-content .news-ending{
+    padding: 0px 26px;
+    background-color: #231834;
+    color: var(--header-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    z-index: 999;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+}
+
+.news-ending .news-text{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.news-ending .news-icon img{
+    width:26px ;
+    height: 26px;
+}
+
+
+.news-running{
+    position: absolute;
+    /* border: 2px solid red; */
+    display: inline-block;
+    animation:  scroll-left 15s linear infinite;
+    width: 80%;
+}
+
+.news-running:hover{
+    animation-play-state:paused ;
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+  }
+
+.running-news-content a{
+    text-decoration: none;
+    color: var(--sections-heading);
+    font-size: 14px;
+}
+
+.running-news-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+
+.running-news-content a .news-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.right-arrow img{
+    width: 10px;
+    height: 15px;
+}

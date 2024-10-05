@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text:#ffffff;
+    --header-background:#0B7C2D;
+    --link-hover:#E1C214;
+    --sections-subHeading:#383838;
+    --sections-heading:#231834;
+    --about-section-text:#F8F8F8;
+}
+
+
+.ode-section{
+    height: 80vh;
+    background:linear-gradient(to left,#E1C214,#F7EFC3);
+}
+
+.ode-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 23px;
+    padding-bottom: 4px;
+}
+
+.ode-heading .sub-ode-heading{
+    color: var(--sections-subHeading);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.ode-heading .sup-ode-heading{
+    color: var(--sections-heading);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card-subcontainer{
+    margin-top: 23px;
+    /* border: 3px solid rgb(175, 12, 12); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 0px;
+    justify-content: center;
+}
+
+
+
+
+.card1{
+    width: 40em;
+    height: 21em;
+    /* border: 3px solid rgb(73, 9, 247); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img{
+    height: 331px;
+    width: 255px;
+}
+
+.card-image{
+position: relative;
+}
+
+
+.semi-circle{
+    position: absolute;
+    clip-path: circle(49.3% at 50% 100%);
+    background-color: #ffffff;
+    bottom: 5px;
+    left: 14px;
+    width: 223px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.semi-circle .semi-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 3px;
+    /* border: 2px solid black; */
+    margin-top: 12px;
+}
+
+
+
+.semi-circle .ss-heading{
+    font-size: 13px;
+    color: var(--header-background);
+    font-weight: 800;
+}
+
+.semi-circle .ss-text{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.card-text-content{
+    /* border: 2px solid rgb(248, 232, 0); */
+    width: 365px;
+    height: 307px;
+    background-color: #ffffff;
+    padding: 12px 10px;
+}
+
+.card-text-content h1{
+    color: var(--header-background);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card-text-content p{
+    color: var(--sections-heading);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.card-button{
+    background-color: var(--header-background);
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 7px 21px;
+    font-size: 12px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.card-button:hover{
+    background-color: var(--link-hover);
+    color: #000000;
+    font-size: 13px;
+}
+
+
+
+
+.card2-image img {
+    height: 360px;
+    width: 275px;
+}
+
+.card2-image{
+    position: relative;
+}
+
+
+.second-semi-circle{
+    position: absolute;
+    clip-path: circle(49.3% at 50% 100%);
+    background-color: #ffffff;
+    bottom: 26px;
+    left: 20px;
+    width: 223px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-semi-circle .second-semi-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 3px;
+    /* border: 2px solid black; */
+    margin-top: 12px;
+}
+
+.second-semi-circle .second-ss-heading{
+    font-size: 12px;
+    color: var(--header-background);
+    font-weight: 800;
+}
+
+.second-semi-circle .second-ss-text{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
+.card2-text-content{
+    /* border: 2px solid rgb(248, 232, 0); */
+    width: 365px;
+    height: 307px;
+    background-color: #ffffff;
+    padding: 12px 10px;
+}
+
+.card2-text-content h1{
+    color: var(--header-background);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card2-text-content p{
+    color: var(--sections-heading);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.card2-text-content .card-button{
+    margin-top: 98px;
+}

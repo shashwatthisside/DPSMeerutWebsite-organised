@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text:#ffffff;
+    --header-background:#0B7C2D;
+    --link-hover:#E1C214;
+    --sections-subHeading:#383838;
+    --sections-heading:#231834;
+    --about-section-text:#F8F8F8;
+}
+
+
+.infra-section{
+    height: 80vh;
+    background:linear-gradient(to left,#E1C214,#F7EFC3);
+}
+
+
+
+.infra-section .infra-heading{
+    color: #383838;
+    padding: 45px 12px;
+}
+
+
+.infra-heading-main{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.infra-heading-sub{
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: start;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.infra-card{
+    width: 322px;
+    height: 380px;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+/* Infra Hover Effect Section */
+
+.infra-hover-card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    bottom: -100%;
+    left: 0;
+    position: absolute;
+    background-color: #08a537b6;
+    z-index: 999;
+    transition: all 0.2s ease-in-out;
+}
+
+.infra-card:hover .infra-hover-card{
+    bottom: 0;
+}
+
+.infra-card:hover .infra-card-title{
+    display: none;
+}
+
+.infra-card:hover img{
+    transform: scale(1.05);
+}
+
+.infra-card img{
+transition: all 0.2s ease;
+}
+
+
+.infra-hover-content{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    margin-bottom: 0px;
+    padding: 0px 24px;
+    color: #ffffff;
+}
+
+.infra-hover-content .hover-card-view-all{
+    display: flex;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+.hover-card-view-all .infra-viewall{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.hover-card-view-all
+.view-all-icon{
+    background-color: #E1C214;
+    border-radius: 100px;
+    padding: 0px 0px;
+    width:1.7em ;
+    height: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.hover-card-view-all
+.view-all-icon img{
+    width: 17px;
+    height: 10px;
+}
+
+
+.infra-hover-content .hover-content-title{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.infra-hover-content
+.hover-title-underline{
+    height: 3px;
+    width: 25%;
+    background-color: #ffffff;
+    margin-top: -13px;
+    margin-bottom: 12px;
+}
+
+.infra-hover-content
+.infra-hover-para{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hover-card-view-all  .view-all-line{
+    width: 20%;
+    height: 1px;
+    background-color: #ffffff;
+
+}
+
+/* Infra Hover Effect Section ends here */
+
+
+
+.infra-card .infra-card-image img{
+width: 100%;
+height: 100%;
+}
+
+
+.infra-card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.infra-card-title{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0px;
+    z-index: 9;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-title-text{
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-title-underline{
+    width: 16%;
+    border-radius: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
