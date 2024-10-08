@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
     padding: 0px;
@@ -20,13 +18,13 @@
 
 .school-herosection{
     width: 100%;
-    height: 84vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
 }
 
 
-.school-herosection::before{
+/* .school-herosection::before{
     content: "";
     position: absolute;
     top: 0;
@@ -38,7 +36,9 @@
     background-position: center;
     z-index: -1;
     filter: brightness(60%);
-}
+} */
+
+
 
 
 .squarebox{
@@ -46,7 +46,7 @@
     bottom: 0;
     left: 0;
     width: 10em;
-    height: 10em;
+    height: 9em;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -55,16 +55,20 @@
     /* overflow: hidden; */
     background-color: rgba(0, 0, 0, 0.175);
     backdrop-filter: blur(5px);
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .squarebox .school-logo img{
-    width: 60px;
-    height: 60px;
+    width: 3.4em;
+    height: 3.6em;
 }
 
 .box-text-content .school-name{
     color: var(--header-text);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -83,6 +87,6 @@
 }
 
 .social-icon img{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }

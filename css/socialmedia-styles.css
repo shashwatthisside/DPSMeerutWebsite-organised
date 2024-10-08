@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text:#ffffff;
+    --header-background:#0B7C2D;
+    --link-hover:#E1C214;
+    --sections-subHeading:#383838;
+    --sections-heading:#231834;
+    --about-section-text:#F8F8F8;
+}
+
+
+.social-media-heading{
+    font-family: "Jost", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom:1em ;
+}
+
+
+.social-media-section{
+    height: 75vh;
+    padding: 0px 73px;
+    background: url("../images/Group 270223/Group 270223.png");
+}
+
+
+
+.social-media-card{
+    width: 350px;
+    height: 300px;
+border: 2px solid #E1C214;
+position: relative;
+
+}
+
+.social-media-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.social-media-badge{
+    background-color: #EEDD7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.social-media-text{
+    color:#383838;
+    font-family: "Jost", system-ui;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.social-media-badge  .social-media-icon .fa-youtube{
+    color: red;
+    font-size:1.5em;
+}
+
+.social-media-badge  .social-media-icon .fa-instagram{
+    color: red;
+    font-size:1.5em;
+}
+
+.social-media-badge .social-media-icon .fa-facebook-f{
+    color: rgb(29, 98, 171);
+    font-size:1.5em;
+}
+
+.social-media-badge .social-media-icon .fa-x-twitter{
+    color: rgb(0, 0, 0);
+    font-size:1.5em;
+}
+
+
+
+
+
+

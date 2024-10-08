@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 *{
@@ -19,15 +18,20 @@
 
 
 .infra-section{
-    height: 80vh;
+    height: 77vh;
     background:linear-gradient(to left,#E1C214,#F7EFC3);
+    padding: 0px 73px;
 }
+
+
 
 
 
 .infra-section .infra-heading{
     color: #383838;
-    padding: 45px 12px;
+    padding: 45px 0px;
+    font-family: "Jost", system-ui;
+    font-style: normal;
 }
 
 
@@ -37,21 +41,21 @@
     align-items: center;
     justify-content: end;
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .infra-heading-sub{
     /* border: 2px solid red; */
     align-items: center;
     justify-content: start;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 
 .infra-card{
-    width: 322px;
-    height: 380px;
+    width: 18em;
+    height: 21.4em;
     position: relative;
     border: 2px solid rgb(255, 255, 255);
     overflow: hidden;
@@ -70,6 +74,8 @@
     background-color: #08a537b6;
     z-index: 999;
     transition: all 0.2s ease-in-out;
+    font-family: "Jost", system-ui;
+    font-style: normal;
 }
 
 .infra-card:hover .infra-hover-card{
@@ -97,7 +103,7 @@ transition: all 0.2s ease;
     align-items: start;
     justify-content: end;
     margin-bottom: 0px;
-    padding: 0px 24px;
+    padding: 0px 15px;
     color: #ffffff;
 }
 
@@ -111,7 +117,7 @@ transition: all 0.2s ease;
 }
 
 .hover-card-view-all .infra-viewall{
-    font-size: 1.2em;
+    font-size: 15px;
     font-weight: 500;
     margin-top: 12px;
 }
@@ -121,8 +127,8 @@ transition: all 0.2s ease;
     background-color: #E1C214;
     border-radius: 100px;
     padding: 0px 0px;
-    width:1.7em ;
-    height: 1.7em;
+    width:1.4em ;
+    height: 1.4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,13 +138,13 @@ transition: all 0.2s ease;
 
 .hover-card-view-all
 .view-all-icon img{
-    width: 17px;
-    height: 10px;
+    width: 12px;
+    height: 9px;
 }
 
 
 .infra-hover-content .hover-content-title{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -153,7 +159,7 @@ transition: all 0.2s ease;
 
 .infra-hover-content
 .infra-hover-para{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 

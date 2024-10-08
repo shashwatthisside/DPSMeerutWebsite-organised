@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 *{
@@ -24,13 +23,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom:2px solid #ece5e5fb;
+    border-bottom:1px solid #ece5e5fb;
 }
 
 .main-container{
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
     /* border: 2px solid black; */
@@ -44,8 +42,8 @@
 }
 
 .left-section img{
-    width: 23em;
-    height: 4.8em;
+    width: 21em;
+    height: 4.4em;
 }
 
 
@@ -56,7 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 23px;
+    gap: 12px;
     margin-right: 6em;
 }
 
@@ -65,9 +63,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
-    gap: 2px;
+    justify-content: space-between;
+    gap: 4px;
     position: relative;
+    font-family: "Jost", system-ui;
+    font-style: normal;
 }
 
 
@@ -76,16 +76,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .group1 .three60btn{
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 0px 5px;
+    padding: 0px 6px;
+    border-radius:2px ;
     align-items: center;
-    gap: 3px;
+    gap: 4px;
     transition: all 0.2s ease ;
     cursor: pointer;
 }
@@ -100,7 +101,7 @@
 }
 
 .group1 .three60btn .three60-icon img{
-    width: 23px;
+    width: 22px;
     height: 25px;
 
 }
@@ -108,7 +109,6 @@
 .group1 .three60btn .three60-text{
     font-size: 12px;
     font-weight: 600;
-    font-family: "Jost", sans-serif;
 }
 
 
@@ -116,16 +116,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: 5px;
 }
 
-.socialmedia-icons a img{
+.socialmedia-icons a{
     width: 20px;
     height: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 10px;
 }
 
+.socialmedia-icons a i{
+    font-size: 12px;
+}
 
+.facebook-icon{
+    background-color: rgb(70, 70, 233);
+}
+.facebook-icon:hover{
+    background-color: var(--header-background);
+}
 
+.instagram-icon{
+    background: linear-gradient(to Right, red, orange);
+}
+.instagram-icon:hover{
+    background: var(--header-background);
+}
+
+.youtube-icon{
+    background-color: red;
+}
+.youtube-icon:hover{
+    background: var(--header-background);
+}
+
+.twitter-icon{
+    background-color: rgb(0, 0, 0);
+}
+.twitter-icon:hover{
+    background: var(--header-background);
+}
 
 /* Group 2 */
 
@@ -133,44 +169,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
+    padding-top: 2px;
+    font-weight: 300;
 }
 
 
-.group2 .mobile{
+.group2 .group2-element{
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--header-text);
-    gap: 3px;
+    gap: 5px;
 }
 
-.mobile .mobile-icon img{
-width: 18px ;
-height: 18px;
-}
-
-
-.group2 .email{
+.group2 .group2-icon{
+    background-color: white;
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--header-text);
-    gap: 3px;
 }
 
-.email .email-text{
-    font-size: 13px;
+.group2 .group2-icon img{
+    width: 11px;
+    height: 11px;
 }
 
-.mobile .mobile-text{
-    font-size: 13px;
+.group2 .group2-icon:hover{
+    background-color: #E1C214;
 }
 
-.email .email-icon img{
-    width: 18px ;
-    height: 18px;
-    }
+.group2-element .group2-text{
+    font-size: 12px;
+    font-weight: 400;
+}
 
 
     .group3{
@@ -178,7 +213,8 @@ height: 18px;
         align-items: center;
         justify-content: center;
         color: var(--header-text);
-        gap: 15px;
+        gap: 12px;
+        font-weight: 300;
     }
 
     .group3 a{
@@ -188,11 +224,13 @@ height: 18px;
 
     .group3-text{
         font-size: 12px;
+        font-weight: 400;
     }
 
     .dividing-line{
-        opacity: 0.9;
-        color: #ffffff;
+        width: 2px;
+        height: 15px;
+        background-color: #ffffff4d;
     }
 
 
@@ -203,30 +241,30 @@ height: 18px;
           gap: 6px;
          position: relative;
          gap: 4px;
+         font-family: "Rubik", system-ui;
+         font-style: normal;
     }
 
     .header-btn{
         background:transparent linear-gradient(230deg, #007fd0 0%, #002348 100%);
         position: relative;
-        color: var(--header-text);
         border-radius: 0 25px 25px 0;
-        padding: 8px 4px;
         transition: 0.3s;
-        margin: 0 13px;
         display: flex;
         align-items: center;
-        border: 1px solid white;
+        border: 2px solid rgba(255, 255, 255, 0.692);
         text-decoration: none;
         color: var(--header-text);
-        width: 161px;
-        height: 34px;
+        width: 155px;
+    height: 38px;
+margin-left: 12px;
       }
 
 
       .btn-icon{
         box-shadow: inset 10px 11px 12px #00000029, 0px 3px 10px #00000021;
         border: 1px solid #ffffff;
-        padding: 2px;
+        padding: 3px;
         border-radius: 50%;
         top: 50%;
         left: 0;
@@ -242,7 +280,6 @@ height: 18px;
 
       .btn-text{
         padding: 0px 3px 0px 6px;
-        border-left: 1px #ffffff solid;
       }
 
 
@@ -252,8 +289,12 @@ height: 18px;
 
 
       .btn-text{
-        font-size: 12px;
-        margin-left: 15px;
+        font-size: 11px;
+        margin-left: 12px;
+      }
+
+      .btn-text i{
+        font-size: 17px;
       }
 
       .btn-icon img{
@@ -273,8 +314,8 @@ height: 18px;
         justify-content: center;
         border: 1px solid white;
         text-decoration: none;
-        width: 10.8em;
-    height: 2.1em;
+        width: 169px;
+    height: 38px;
       }
 
 
@@ -294,15 +335,11 @@ height: 18px;
       }
 
 
-      .left-half::after{
-        content:"";
-        position: absolute;
-        width: 2px;
-        height: 4.7em;
-        background-color: var(--header-text);
-        opacity: 0.5;
-        vertical-align: middle;
-        right: -13px;
+
+      .half-dividing-line{
+        width: 1px;
+        height: 67px;
+        background-color: #ffffff4f
       }
 
 /* Main Header Ends Here */
@@ -322,20 +359,23 @@ height: 18px;
     align-items: center;
     padding: 11px 0px;
     overflow: hidden;
+    gap: 2px;
+    font-family: "Rubik", system-ui;
 }
 
 .lower-container span a{
     text-decoration: none;
     color: var(--header-text);
     font-size: 12px;
-    font-family: "Rubik";
     padding: 24px 6px;
     transition: all 0.2s ease;
+    font-weight: 400;
 }
 
 .lower-container .dividing-line{
     margin-left: 5px;
     margin-right:5px ;
+    height: 17px;
 }
 
 
@@ -362,11 +402,15 @@ height: 18px;
     background-color: #0B7C2D;
 }
 
+.minus-margin-for-arrow{
+    margin-left: -5px;
+}
+
 /* Updates Section */
 
 .news-section{
     background-color: #ffffff;
-    height: 42px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +430,7 @@ height: 18px;
 
 
 .news-section-content .news-ending{
-    padding: 0px 26px;
+    padding: 0px 20px;
     background-color: #231834;
     color: var(--header-text);
     display: flex;
@@ -400,8 +444,8 @@ height: 18px;
 }
 
 .news-ending .news-text{
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 17px;
+    font-family: "Rubik", system-ui;
 }
 
 .news-ending .news-icon img{
@@ -434,6 +478,8 @@ height: 18px;
     text-decoration: none;
     color: var(--sections-heading);
     font-size: 14px;
+    font-family: "Rubik", system-ui;
+    font-weight: 500;
 }
 
 .running-news-content{
