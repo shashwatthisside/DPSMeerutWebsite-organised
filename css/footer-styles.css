@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&family=Mulish:wght@200..1000&family=Noto+Sans:ital@0;1&family=Rubik:ital,wght@0,600;1,600&display=swap');;
 
 
 *{
@@ -17,53 +17,173 @@
 }
 
 
-.footer-section{
-    height: 70vh;
-    padding: 0px 73px;
-    background-color: #ff000022;
+.footer {
+    position: relative;
+    background-image: url('https://www.dpsgs.org/dpsg-cms/imagedir_thumb/large/DPSGM/school.jpg');
+    background-size: cover;
+    background-position: center;
+    height:40vh;
+    color: #333;
+    text-align: center;
+    padding: 27px 73px 0px 73px;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 1;
 }
 
 
-.footer-section{
+.footer-content {
+    position: relative;
+    z-index: 2;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
+
+
+
+
+
+
+/* ----------------1------------------ */
+
 
 .first-section-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
+    width: 45em;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.first-footer-content{
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.first-section-footer .first-section-footer-title{
+    font-family: "Jost", serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: underline;
+  color: #383838;
 }
 
-.second-section-footer .upper-half-second-footer{
-    display: flex;
+.first-footer-text{
+    font-family: "Jost", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #383838;
+  font-size: 12px;
+  text-align: left;
 }
 
-.upper-half-second-footer .text-upper-half{
-    display: flex;
-    flex-direction: column;
+.first-footer-content img{
+width:30px ;
+height: 22px;
+}
+
+.first-footer-content img:hover{
+    filter: grayscale(100%) brightness(0%);
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
+/* ----------------2----------------- */
 
 
 .second-section-footer{
     display: flex;
     flex-direction: column;
+    padding: 0px 136px;
+}
+
+.upper-half-second-footer{
+    display: flex;
+    gap: 2px;
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+.text-upper-half{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.text-upper-half .heading-upper-half{
+    color: #231F20;
+    font-size: 20px;
+    font-family: "Noto Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.text-upper-half .heading-upper-half span{
+    color: #0B7C2D;
+}
+
+
+.text-upper-half .subheading-upper-half{
+    color: #CEB10E;
+    font-family: "Noto Sans", serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-upper-half .subheading2-upper-half{
+    color: #231F20;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Mulish", sans-serif;
+  font-style: italic;
+}
+
+.upper-half-second-footer .image-upper-half{
+    width: 81px;
+    height: 88px;
+}
+
+.upper-half-second-footer .image-upper-half img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.lower-half-second-footer .lower-half-para{
+    color: #383838;
+    font-size: 12px;
+    font-family: "Jost", serif;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+
+
+
+/* -----------------3------------------- */
 
 
 .third-section-footer{
@@ -71,31 +191,74 @@
     flex-direction: column;
     align-items: end;
     justify-content: center;
+    width: 45em;
+    gap: 7px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.first-section-footer-title{
-    text-decoration: underline;
+    
+.third-section-footer .contact-with-us{
+    color: #231834;
     font-size: 15px;
+    font-family: "Jost", serif;
+    font-weight: 600;
 }
 
-.first-section-footer .footer-mobile{
+
+.third-section-icon img{
+    width:23px ;
+    height: 23px;
+}
+
+.third-section-icons{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
 }
 
-.footer-mobile img{
-    width: 25px;
-    height: 20px;
+.third-section-favicon{   
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
 }
+
+
+.third-section-favicon i{
+    font-size: 18px;
+    transition: all 0.01s ease-in-out;
+}
+
+
+.third-section-favicon:hover{
+    background-color: #E1C214;
+    color: white;
+    border: 1px solid white;
+}
+
+.third-section-favicon:hover i{
+    font-size: 16px;
+}
+
+
+.footer-bottom-strip{
+position: absolute;
+bottom: 0px;
+left: 0px;
+background-color: #E1C214;
+color: #383838;
+font-family: "Jost", serif;
+font-size: 11px;
+text-align: center;
+z-index: 11;
+width: 100%;
+font-weight: 500;
+padding: 2px 0px;
+}
+
+
+ 

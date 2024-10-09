@@ -55,7 +55,7 @@
 
 .infra-card{
     width: 18em;
-    height: 21.4em;
+    height: 21.6em;
     position: relative;
     border: 2px solid rgb(255, 255, 255);
     overflow: hidden;
@@ -202,7 +202,7 @@ height: 100%;
 
 .card-title-text{
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 14px;
     font-weight: 600;
 }
 
