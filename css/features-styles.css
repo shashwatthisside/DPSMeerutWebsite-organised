@@ -24,7 +24,7 @@
     background-size: cover;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     padding: 0px 73px;
 }
 
@@ -43,7 +43,12 @@
     overflow: hidden;
 }
 
-.features-card::before{
+
+.features-card:hover{
+    background-color: rgba(0, 0, 0, 0.297);
+} 
+
+/* .features-card::after{
     content:"";
     bottom: -100%;
     left: 0;
@@ -52,15 +57,9 @@
     height: 100%;
     background: linear-gradient(to top, #0000ff85, #00000069);
     opacity: 0.6;
-    z-index: 2;
     filter: brightness(100%);
     transition: all 0.2s ease;
-}
-
-
-.features-card:hover .features-card::before{
-    bottom: 100%;
-}
+} */
 
 
 
@@ -94,7 +93,7 @@
 .text-hover{
     border: 2px solid #E1C214;
     display: flex;
-    width: 24em; 
+    width: 23em; 
     /* height: 13em; */
     height: 5em;
     align-items: center;
@@ -102,8 +101,8 @@
     gap: 5px;
     flex-direction: column;
     opacity: 0;
-    transition: height 0.2s ease;
-    transition: opacity 0.07s ease;
+    transition: height 2s ease;
+    transition: opacity 0.5s ease;
 }
 
 .features-card:hover .text-hover{
@@ -117,6 +116,7 @@
     font-size: 20px;
     font-weight: 500;
     opacity: 0;
+    transition: all 0.2s ease;
 }
 
 .features-card:hover .text-hover .text-hover-title{
