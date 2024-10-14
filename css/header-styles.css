@@ -255,9 +255,68 @@
         border: 2px solid rgba(255, 255, 255, 0.692);
         text-decoration: none;
         color: var(--header-text);
-        width: 155px;
-    height: 38px;
-margin-left: 12px;
+        width: 170px;
+        height: 38px;
+        margin-left: 12px;
+      }
+
+      .header-btn-tooltip{ 
+        position: absolute;
+        bottom: -88px;
+        left: -17px;
+        z-index: 2;
+        padding: 1px 0px;
+        background-color: #ffffff;
+        width: 189px;
+        height: 80px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 11px;
+        display: none;
+      }
+
+      .header-btn-tooltip::before{
+        content: "";
+        position:absolute;
+        width: 20px;
+        height: 12px;
+        top: -12px;
+        left: 85px;
+        background-color: #ffffff;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+
+      
+
+      .header-btn:hover .header-btn-tooltip{
+        display: flex;
+      }
+
+      .header-btn-tooltip a{
+        text-decoration: none;
+      }
+
+      .header-tooltip-text{
+        color: black;
+        font-size: 10px;
+        font-weight: 500;
+      }
+      .header-tooltip-text:hover{
+        color: black;
+        font-size: 11px;
+        transition: all 0.1s ease;
+      }
+
+      .header-tooltip-text sup{
+        font-size: 7px;
+      }
+      .tooltip-devision-line{
+        height: 1px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.507);
       }
 
 
@@ -273,8 +332,7 @@ margin-left: 12px;
         transform: translate(0, -50%);
         position: absolute;
         display: flex;
-        background: transparent linear-gradient(179deg, #007fd0 0%, #002348 100%);
-        
+        background: transparent linear-gradient(179deg, #007fd0 0%, #002348 100%);        
       }
 
 
@@ -289,8 +347,8 @@ margin-left: 12px;
 
 
       .btn-text{
-        font-size: 11px;
-        margin-left: 12px;
+        font-size: 12px;
+        margin-left: 15px;
       }
 
       .btn-text i{
@@ -314,8 +372,8 @@ margin-left: 12px;
         justify-content: center;
         border: 1px solid white;
         text-decoration: none;
-        width: 169px;
-    height: 38px;
+        width: 181px;
+        height: 37px;
       }
 
 

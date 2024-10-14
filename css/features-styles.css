@@ -30,9 +30,6 @@
 
 
 .features-card{
-    background-image: url("../images/museums-victoria-n1LIveUPls4-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 25em;
     height: 14em;
     display: flex;
@@ -43,25 +40,31 @@
     overflow: hidden;
 }
 
+.feature-card-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;  
+}
+
+.feature-card-background img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+
+.features-card:hover .feature-card-background img{
+    transform: scale(1.02);
+    filter: brightness(60%);
+    
+}
+
 
 .features-card:hover{
     background-color: rgba(0, 0, 0, 0.297);
-} 
-
-/* .features-card::after{
-    content:"";
-    bottom: -100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #0000ff85, #00000069);
-    opacity: 0.6;
-    filter: brightness(100%);
-    transition: all 0.2s ease;
-} */
-
-
+}
 
 
 .feature-text{
@@ -77,17 +80,14 @@
     opacity: 1;
     width: 100%;
     z-index: 9;
-    background:linear-gradient(to top, #0000ff46, #0000000b);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8295693277310925) 16%, rgba(0,0,0,0) 100%);
     padding-top: 10px;
 }
 
 .features-card:hover .feature-text{
     opacity: 0;
 }
-
-
-
-
 
 
 .text-hover{
@@ -103,6 +103,7 @@
     opacity: 0;
     transition: height 2s ease;
     transition: opacity 0.5s ease;
+    z-index: 22;
 }
 
 .features-card:hover .text-hover{
