@@ -16,30 +16,17 @@
     --about-section-text:#F8F8F8;
 }
 
-
-
-
 .ode-section{
-    height: 80vh;
+    padding: 3.5em 6em;
     background:linear-gradient(to left,#E1C214,#F7EFC3);
-    padding: 0px 66px;
 }
-
-.cards-container{
-display: flex;
-padding: 0px 12px;
-}
-
-.ode-section-heading{
-    padding-top: 50px;
-}
-
 
 .ode-card{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .ode-card-image{
     position: relative;

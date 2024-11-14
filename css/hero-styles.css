@@ -17,29 +17,17 @@
 
 
 .school-herosection{
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
+    /* width: 100%;
+    height: 80vh; */
+    /* overflow: hidden; */
     position: relative;
+    overflow: hidden;
 }
 
-
-/* .school-herosection::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://cdn.pixabay.com/photo/2024/01/04/14/27/write-8487618_1280.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    filter: brightness(60%);
-} */
-
-
-
+.carousel{
+    height: 80vh;
+    z-index: -11;
+}
 
 .squarebox{
     position: absolute;
@@ -55,9 +43,9 @@
     z-index: 99999;
     background-color: rgba(0, 0, 0, 0.175);
     backdrop-filter: blur(5px);
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .squarebox .school-logo img{

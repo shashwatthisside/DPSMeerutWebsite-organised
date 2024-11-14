@@ -16,29 +16,18 @@
     --about-section-text:#F8F8F8;
 }
 
+/*  Main header section */
+
 .main-header{
     background-color: var(--header-background);
-    height: 5.6rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-bottom:1px solid #ece5e5fb;
-}
-
-.main-container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 2px solid black; */
+    padding: 5px 0px;
 }
 
 /* Left-Section */
 
 .left-section{
-    display: inline-block;
-    margin-left: 6em;
+    margin-left: 5em;
 }
 
 .left-section img{
@@ -46,28 +35,18 @@
     height: 4.4em;
 }
 
-
-
 /* Right-Section */
 
 .right-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 12px;
-    margin-right: 6em;
+    margin-right: 5em;
 }
 
 /* Left-Half of Right Section */
 .left-half{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 4px;
-    position: relative;
     font-family: "Jost", system-ui;
     font-style: normal;
+    /* border: 2px solid black; */
 }
 
 
@@ -255,7 +234,7 @@
         border: 2px solid rgba(255, 255, 255, 0.692);
         text-decoration: none;
         color: var(--header-text);
-        width: 170px;
+        width: 162px;
         height: 38px;
         margin-left: 12px;
       }
@@ -265,7 +244,6 @@
         bottom: -88px;
         left: -17px;
         z-index: 2;
-        padding: 1px 0px;
         background-color: #ffffff;
         width: 189px;
         height: 80px;
@@ -285,6 +263,7 @@
         height: 12px;
         top: -12px;
         left: 85px;
+        padding: 0px 0px;
         background-color: #ffffff;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       }
@@ -347,8 +326,8 @@
 
 
       .btn-text{
-        font-size: 12px;
-        margin-left: 15px;
+        font-size: 11px;
+        margin-left: 19px;
       }
 
       .btn-text i{
@@ -372,7 +351,7 @@
         justify-content: center;
         border: 1px solid white;
         text-decoration: none;
-        width: 181px;
+        width: 175px;
         height: 37px;
       }
 
@@ -400,25 +379,13 @@
         background-color: #ffffff4f
       }
 
-/* Main Header Ends Here */
-
-
 /* Lower Header Starts Here */
 
 .lower-header{
     background-color: var(--header-background);
-    display: flex;
-    justify-content: center;
-}
-
-.lower-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 0px;
-    overflow: hidden;
-    gap: 2px;
     font-family: "Rubik", system-ui;
+    overflow: hidden;
+    padding: 10px 0px;
 }
 
 .lower-container span a{
@@ -464,57 +431,49 @@
     margin-left: -5px;
 }
 
+
 /* Updates Section */
 
 .news-section{
     background-color: #ffffff;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0em 7.4em;
 }
 
 
 .news-section-content{
-    /* padding: 23px 0px; */
-    display: flex;
-    width: 72em;
-    align-items: center;
-    /* border: 2px solid black; */
-    height: 100%;
+    padding:1em 0em;
     overflow: hidden;
     position: relative;
 }
 
 
 .news-section-content .news-ending{
-    padding: 0px 20px;
+    padding: 0px 17px;
     background-color: #231834;
     color: var(--header-text);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
-    z-index: 999;
+    z-index: 9;
     position: absolute;
     left: 0px;
     height: 100%;
 }
 
 .news-ending .news-text{
-    font-size: 17px;
+    font-size: 14px;
     font-family: "Rubik", system-ui;
 }
 
 .news-ending .news-icon img{
-    width:26px ;
-    height: 26px;
+    width:22px ;
+    height: 22px;
 }
 
 
 .news-running{
     position: absolute;
-    /* border: 2px solid red; */
     display: inline-block;
     animation:  scroll-left 15s linear infinite;
     width: 80%;
@@ -523,6 +482,7 @@
 .news-running:hover{
     animation-play-state:paused ;
 }
+
 @keyframes scroll-left {
     0% {
         transform: translateX(100%);

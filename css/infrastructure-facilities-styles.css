@@ -18,18 +18,12 @@
 
 
 .infra-section{
-    height: 77vh;
     background:linear-gradient(to left,#E1C214,#F7EFC3);
-    padding: 0px 73px;
 }
-
-
-
 
 
 .infra-section .infra-heading{
     color: #383838;
-    padding: 45px 0px;
     font-family: "Jost", system-ui;
     font-style: normal;
 }

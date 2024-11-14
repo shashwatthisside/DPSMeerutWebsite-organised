@@ -15,16 +15,6 @@
     --about-section-text:#F8F8F8;
 }
 
-
-.community-heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top:3em;
-
-}
-
 .community-heading .community-sub-heading{
     color: #222222;
     font-family: "Jost", system-ui;
@@ -44,21 +34,21 @@
 
 .community-section{
     background: linear-gradient(to bottom Right, #E1C214, #F7EFC3);
-    height: 75vh;
-    padding: 0px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
+.community-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .community-card{
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
     /* border: 2px solid red; */
-    width:19em;
-    height: 18em;
+    width:20em;
+    height: 16em;
     position: relative;
     overflow: hidden;
     transition: all 0.2s ease ;
@@ -92,7 +82,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width:120px ;
+    width:155px ;
     height: 39px;
     display: flex;
     align-items: center;
@@ -145,12 +135,7 @@
     justify-content: flex-end;
     gap: 5px;
     padding-left: 10px;
-    padding-bottom: 8px;
 }
-
-
-
-
 
 .community-card .community-card-lower-half .lower-half-para{
     color: #383838;
@@ -178,7 +163,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    padding-top:55px ;
+    padding-top:20px ;
 
 }
 
@@ -190,7 +175,7 @@
 
 .greenstrip-community-card{
     width: 94%;
-    height: 5px;
+    height: 4px;
     background-color: #0B7C2D;
     margin: auto;
     transition: all 0.2s ease;
@@ -200,24 +185,23 @@
 /* Hover effect */
 
 
-.community-card:hover .upper-half-image img {
+.community-card-container:hover .upper-half-image img {
     transform:scale(1.03)
 
 }
 
 
-.community-card:hover{
-    height: 17.7em;
+.community-card-container:hover .community-card{
+    height: 15.5em
 }
 
 
-.community-card:hover .lower-half-readmore i{
-    opacity: 1
-    ;
+.community-card-container:hover .lower-half-readmore i{
+    opacity: 1;
 }
 
 .community-card-container:hover .greenstrip-community-card{
-    height: 10px;
+    height: 11px;
 }
 
 

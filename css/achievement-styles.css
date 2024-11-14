@@ -34,7 +34,6 @@
 }
 
 .achievements-cards{
-    display: flex;
     gap: 13px;
     padding-top: 1em;
 }

@@ -17,10 +17,9 @@
 }
 
 .gallery-section{
-    height: 65vh;
-    padding: 0px 73px;
     background: url("../images/Group 270224/Group 270224.png");
     filter: brightness(130%);
+    padding: 30px 102px 90px 102px;
 }
 
 
@@ -28,7 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4em;
 }
 
 .gallery-heading .gallery-heading-title{
@@ -54,18 +52,8 @@
     border: 1px solid white;
 }
 
-.gallery-cards{
-    /* border: 2px solid red; */
-    display: flex;
-    gap: 10px;
-    padding-top:2em ;
-}
-
 
 .gallery-card{
-    display: inline-block;
-    width: 19em;
-    height: 13em;
     display: flex;
     flex-direction: column;
     justify-content: end;

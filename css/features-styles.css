@@ -18,14 +18,12 @@
 
 .features{
     background:url("../images/Group 270224/Group 270224@2x.png");
-    height: 50vh;
+    padding: 2.7em 6em;
     display: flex;
-    background-image:(".") ;
     background-size: cover;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 0px 73px;
 }
 
 
