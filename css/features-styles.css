@@ -18,17 +18,15 @@
 
 .features{
     background:url("../images/Group 270224/Group 270224@2x.png");
-    padding: 2.7em 6em;
+    padding: 3.5em 6em;    
     display: flex;
     background-size: cover;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 }
 
 
 .features-card{
-    width: 25em;
     height: 14em;
     display: flex;
     align-items: center;
@@ -36,6 +34,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    /* border: 2px solid white; */
 }
 
 .feature-card-background{

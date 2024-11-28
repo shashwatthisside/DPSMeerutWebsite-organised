@@ -22,10 +22,10 @@
     background-image: url('https://www.dpsgs.org/dpsg-cms/imagedir_thumb/large/DPSGM/school.jpg');
     background-size: cover;
     background-position: center;
-    height:40vh;
+    /* height:40vh; */
     color: #333;
     text-align: center;
-    padding: 27px 73px 0px 73px;
+    padding: 27px 73px 70px 73px;
 }
 
 .footer::before {
@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    width: 45em;
+    /* width: 45em; */
     gap: 10px;
     align-self: flex-start;
 }
@@ -104,14 +104,13 @@ height: 22px;
 
 
 
-
 /* ----------------2----------------- */
 
 
 .second-section-footer{
     display: flex;
     flex-direction: column;
-    padding: 0px 136px;
+    padding: 0px 110px;
 }
 
 .upper-half-second-footer{
@@ -191,7 +190,6 @@ height: 22px;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    width: 45em;
     gap: 7px;
 }
 
